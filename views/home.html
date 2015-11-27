@@ -1,31 +1,31 @@
+<section id="no-more-tables">
 <div class="page-header">
   <h1>Workers List</h1>
 </div>
-<div class="row">
-  <div class="col-md-12">
-    <table class="table table-striped">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>First Name</th>
-          <th>Last Name</th>
-          <th>Birthday</th>
-          <th>Document</th>
-          <th>Startup Date</th>
-          <th>Salary</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr ng-repeat="worker in workers">
-          <td>{{worker.id}}</td>
-          <td>{{worker.name}}</td>
-          <td>{{worker.surname}}</td>
-          <td>{{worker.birth_date}}</td>
-          <td>{{worker.document_id}}</td>
-          <td>{{worker.startup_date}}</td>
-          <td>{{worker.salary}}</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Birthday</th>
+        <th>Document</th>
+        <th>Startup Date</th>
+        <th>Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="worker in workers">
+        <td data-title="#">{{worker.id}}</td>
+        <td data-title="Name">{{worker.name}}</td>
+        <td data-title="Surname">{{worker.surname}}</td>
+        <td data-title="Birthday">{{worker.birth_date}}</td>
+        <td data-title="Document">{{worker.document_id}}</td>
+        <td data-title="Startup Date">{{worker.startup_date}}</td>
+        <td data-title="Salary">{{worker.salary}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
+</section>
