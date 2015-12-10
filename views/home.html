@@ -20,10 +20,10 @@
         <td data-title="#">{{worker.id}}</td>
         <td data-title="Name">{{worker.name}}</td>
         <td data-title="Surname">{{worker.surname}}</td>
-        <td data-title="Birthday">{{worker.birth_date}}</td>
-        <td data-title="Document">{{worker.document_id}}</td>
-        <td data-title="Startup Date">{{worker.startup_date}}</td>
-        <td data-title="Salary">{{worker.salary}}</td>
+        <td data-title="Birthday">{{worker.birthday_at | date:'dd/MM/yyyy'}}</td>
+        <td data-title="Document">{{worker.document_type.description}}: {{worker.document_number}}</td>
+        <td data-title="Startup Date">{{worker.startup_at | date:'dd/MM/yyyy'}}</td>
+        <td data-title="Salary">{{worker.salary | currency:'€'}}</td>
       </tr>
     </tbody>
   </table>

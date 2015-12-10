@@ -1,5 +1,5 @@
 app.factory('worker', ['$http', function($http) { 
-  return $http.get('http://localhost:3000/api/worker') 
+  return $http.get('http://localhost:3000/worker')
             .success(function(data) { 
               return data; 
             }) 
